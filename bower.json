@@ -1,0 +1,19 @@
+{
+  "name": "soundly",
+  "description": "Changing the way you view and share music.",
+  "main": "app.js",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0",
+    "jquery": "^2.2.4",
+    "lodash": "^4.13.1",
+    "react-router": "^2.4.1"
+  }
+}
