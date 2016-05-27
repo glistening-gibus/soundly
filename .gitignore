@@ -10,3 +10,6 @@ compiled/client
 ## API keys ##
 client/config/config.js
 compiled/client/config/config.js
+
+## MongoDB path ##
+data/
