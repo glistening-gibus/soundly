@@ -13,6 +13,13 @@
   <script src="bower_components/react/react-dom.min.js"></script>
   <!-- Using CDN for react-router for right now. Bower does not support the correct version of react-router  -->
   <script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
+  <script type="text/javascript" src="/client/config/config.js"></script>
+  <script>
+  SC.initialize({
+        client_id: window.SCId
+  });
+  </script>
   <script>
   var { Router,
       Route,
@@ -22,10 +29,13 @@
   </script>
 
   <!-- add more scripts here as you create more component files -->
+  <script src="/client/components/ResultEntryView.js"></script>
+  <script src="/client/components/ResultView.js"></script>
+  <script src="/client/components/SearchView.js"></script>
+  <script src="/client/components/SearchResultView.js"></script>
   <script src="/client/components/App.js"></script>
-  <script src="/client/components/QueueView.js"
+  <script src="/client/components/QueueView.js"></script>
   <script src="/client/index.js"></script>
-
   <!-- in case we are using bootstrap.. -->
 
   <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
