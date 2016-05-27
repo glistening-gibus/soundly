@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
+  <script src="https://npmcdn.com/react-router@2.4.0/umd/ReactRouter.min.js"></script>
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>  
+  <script type="text/javascript" src="/client/config/config.js"></script>
+  <script>
+  SC.initialize({
+        client_id: window.SCId
+  });
+  </script>
+  <script>
+  var { Router,
+      Route,
+      IndexRoute,
+      IndexLink,
+      Link } = ReactRouter;
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.0/lodash.js"></script>
+
+  <!-- add more scripts here as you create more component files -->
+  <script src="/client/components/ResultEntryView.js"></script>
+  <script src="/client/components/ResultView.js"></script>
+  <script src="/client/components/SearchView.js"></script>
+  <script src="/client/components/SearchResultView.js"></script>
+  <script src="/client/components/App.js"></script>
+  <script src="/client/index.js"></script>
+  
+  <!-- in case we are using bootstrap.. -->
+  
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+</body>
+</html>
