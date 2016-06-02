@@ -25,11 +25,20 @@ Collaborative music streamer and visualizer.
 
 ## Usage
 
+After Installing Dependencies,
+
+run:
+npm start
+
 ## Requirements
 
 ## Development
 
 ### Installing Dependencies
+
+1.  npm install
+2.  copy /server/config/config.example.js to /server/config/config.js.
+    fill in your Sound Cloud API Key.
 
 ### Roadmap
 
