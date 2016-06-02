@@ -5,5 +5,9 @@
     "react/react-in-jsx-scope": 0,
     "no-console": 0,
     "react/jsx-no-undef": 1,
+  },
+  "env": {
+    "node": true,
+    "mocha": true
   }
 }

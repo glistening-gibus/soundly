@@ -1,1 +1,1 @@
-babel . --watch --out-dir compiled --presets=es2015,react --ignore=bower_components,node_modules,compiled,server,client/config/config.js,mockup,start --source-maps inline
+babel . --watch --out-dir compiled --presets=es2015,react --ignore=test,bower_components,node_modules,compiled,server,client/config/config.js,mockup,start --source-maps inline

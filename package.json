@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "babel . --watch --out-dir compiled --presets=es2015,react --ignore=bower_components,node_modules,compiled,server,client/config/config.js,mockup,start --source-maps inline",
-    "start": "./start & nodemon ./server/server.js"
+    "start": "./start & nodemon ./server/server.js",
+    "run-tests": "./node_modules/mocha/bin/mocha tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,13 @@
   "homepage": "https://github.com/glistening-gibus/soundly#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
+    "chai": "^3.5.0",
     "eslint-config-airbnb": "^9.0.1",
     "express": "^4.13.4",
     "jquery": "^2.2.4",
     "lodash": "^4.13.1",
     "method-override": "^2.3.6",
+    "mocha": "^2.5.3",
     "mongoose": "^4.4.19",
     "mongoose-type-url": "^1.0.2",
     "morgan": "^1.7.0",
