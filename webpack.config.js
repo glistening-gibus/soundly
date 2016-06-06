@@ -1,26 +1,24 @@
-import path from 'path';
-
 module.exports = {
-  context: path.resolve(__dirname, 'client'),
-  entry: [
-    './index.js',
-  ],
+  entry: './client/index.jsx',
   output: {
-    path: path.resolve(__dirname, 'client'),
+    path: './client/dist',
+    publicPath: './client/dist',
     filename: 'bundle.js',
   },
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      exclude: /(node_modules|bower_components)/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['react', 'es2015'],
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015'],
+        },
       },
-      resolve: {
-        extensions: ['', '.js', '.jsx'],
+      {
+        test: /\.css$/,
+        loader: 'style!css?modules',
       },
-    }],
+    ],
   },
-  watch: true,
 };

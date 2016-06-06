@@ -1,5 +1,5 @@
 import React from 'react';
-import QueueEntryView from './QueueEntryView';
+import QueueEntryView from './QueueEntryView.jsx';
 
 const QueueView = (props) => {
   const queue = props.queue;

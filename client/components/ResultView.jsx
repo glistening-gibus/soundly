@@ -3,7 +3,7 @@
 // passing in the key to the childview is mandatory in React
 // Without key, you will get a warning in console.
 import React from 'react';
-import ResultEntryView from './ResultEntryView';
+import ResultEntryView from './ResultEntryView.jsx';
 
 
 const ResultView = (props) => {

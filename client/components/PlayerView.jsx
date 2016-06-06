@@ -1,6 +1,5 @@
 import React from 'react';
 import SC from 'soundcloud';
-import config from '../config/config';
 
 SC.initialize({
   client_id: window.SCId,

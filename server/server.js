@@ -7,9 +7,12 @@ const path = require('path');
 
 // serving index.html on client side
 // You do not need to use app.get('/'...) because it is taken care of by ReactRouter
-app.use(express.static(path.resolve(__dirname + '/../compiled')));
-app.use(express.static(path.resolve(__dirname + '/../node_modules')));
-
+app.use(express.static('./client'));
+app.use('/scripts', express.static(__dirname + '/../node_modules/bootstrap/dist/'));
+app.use('/scripts', express.static(__dirname + '/../node_modules/jquery/dist/'));
+app.use('/scripts', express.static(__dirname + '/../node_modules/react/dist/'));
+app.use('/scripts', express.static(__dirname + '/../node_modules/react-dom/dist/'));
+app.use('/scripts', express.static(__dirname + '/../node_modules/react-router/umd/'));
 require('./routes/middleware.js')(app, express);
 
 require('./routes/routes.js')(app, express);
