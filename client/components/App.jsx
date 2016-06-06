@@ -1,8 +1,8 @@
 import React from 'react';
-import SearchView from './SearchView';
-import ResultView from './ResultView';
-import QueueView from './QueueView';
-import PlayerView from './PlayerView';
+import SearchView from './SearchView.jsx';
+import ResultView from './ResultView.jsx';
+import QueueView from './QueueView.jsx';
+import PlayerView from './PlayerView.jsx';
 import { browserHistory } from 'react-router';
 import $ from 'jquery';
 

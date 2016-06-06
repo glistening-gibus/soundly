@@ -4,11 +4,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute, Redirect } from 'react-router';
-import App from './components/App';
-import SignupView from './components/SignupView';
-import SigninView from './components/SigninView';
-import HomeView from './components/HomeView';
-import ParentView from './components/ParentView';
+import App from './components/App.jsx';
+import SignupView from './components/SignupView.jsx';
+import SigninView from './components/SigninView.jsx';
+import HomeView from './components/HomeView.jsx';
+import ParentView from './components/ParentView.jsx';
 
 
 const app = document.getElementById('app');

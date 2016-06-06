@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { browserHistory } from 'react-router';
 import $ from 'jquery';
-import App from './App';
+import App from './App.jsx';
 
 
 export default class SignupView extends React.Component {
