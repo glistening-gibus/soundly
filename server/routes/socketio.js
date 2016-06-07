@@ -29,13 +29,14 @@ module.exports = (app, express, http, io) => {
     });
 
     socket.on('update', (data) => {
+      console.log("updating", data[0])
       let roomid = data[0];
       let currentSong = data[1];
       queue.getQueue(roomid).then((updated) => {
         if (currentSong) {
-          io.broadcast.in(roomid).emit('queue', [updated, currentSong]);
+          socket.broadcast.in(roomid).emit('queue', [updated, currentSong]);
         } else {
-          io.broadcast.in(roomid).emit('queue', [updated]);
+          socket.broadcast.in(roomid).emit('queue', [updated]);
         }
       });
     });
